@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/null.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>TMG test</title>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <div class="form-wrapper_bg">
+            <img src="./imgs/bg-cover.jpg" alt="" />
+        </div>
+        <div class="top-bg-img1"><img src="./imgs/mob-top1.svg" alt=""></div>
+        <div class="top-bg-img2"><img src="./imgs/mob-top2.svg" alt=""></div>
+        <section class="section_signup-form">
+            <div class="company-logo">
+                <a href=""><img src="./imgs/company-logo.svg" alt="company logo" /></a>
+            </div>
+            <div class="signup-form_title">
+                <span>Sign Up</span> and find the best place to rest while traveling
+            </div>
+            <form class="signup-form" action="" method="post" novalidate>
+                <div class="signup-form_row">
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_user-name">
+                            <img src="./imgs/icons/u_user.svg" alt="user icon" />
+                            <div class="input-container">
+                                <label class="form-label" for="user name">First Name</label>
+                                <input class="form-input check-input user-info" type="text" name="user name" value="" />
+                            </div>
+                        </div>
+                        <span class="input-error name-error"></span>
+                    </div>
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_user-lastname">
+                            <img src="./imgs/icons/u_users-alt.svg" alt="" />
+                            <div class="input-container">
+                                <label class="form-label" for="second name">Second Name</label>
+                                <input class="form-input check-input user-info" type="text" name="second name"
+                                    value="" />
+                            </div>
+                        </div>
+                        <span class="input-error name-error"></span>
+                    </div>
+                </div>
+                <div class="signup-form_row">
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input">
+                            <img src="./imgs/icons/u_map-marker-alt.svg" alt="" />
+                            <div class="signup_user-country">
+                                <div class="country-selected">
+                                    <div style="display: flex">
+                                        <label class="form-label_coutry" for="second name">Counry</label>
+                                        <input id="show-country" class="country-input check-input" type="text"
+                                            value="" />
+                                        <img src="./imgs/icons/u_angle-right-b.svg" alt="" />
+                                    </div>
+                                    <div class="countries-list">
+                                        <input class="country-item" type="text" value="Afghanistan" data-code="+93" />
+                                        <input class="country-item" type="text" value="Albania" data-code="+355" />
+                                        <input class="country-item" type="text" value="Algeria" data-code="+213" />
+                                        <input class="country-item" type="text" value="Andorra" data-code="+376" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="input-error"></span>
+                    </div>
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_user-phone">
+                            <img src="./imgs/icons/u_phone-alt.svg" alt="" />
+                            <div class="input-container">
+                                <label class="form-label phone-label" for="phone">Phone</label>
+                                <input class="form-input check-input user-phone" id="country-code" type="tel"
+                                    name="phone" id="" value="" />
+                            </div>
+                        </div>
+                        <span class="input-error phone-error"></span>
+                    </div>
+                </div>
+                <div class="signup-form_row">
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_password1">
+                            <img src="./imgs/icons/u_padlock.svg" alt="user icon" />
+                            <div class="input-container">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-input check-input" type="password" name="password" id="password1"
+                                    value="" />
+                            </div>
+                        </div>
+                        <span class="input-error pass-error"></span>
+                    </div>
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_password2">
+                            <img src="./imgs/icons/u_padlock2.svg" alt="" />
+                            <div class="input-container">
+                                <label class="form-label" for="confirm password">Confirm password</label>
+                                <input class="form-input check-input" type="password" name="confirm password"
+                                    id="password2" value="" />
+                            </div>
+                        </div>
+                        <span class="input-error pass-error2"></span>
+                    </div>
+                </div>
+                <div class="signup-form_row">
+                    <div class="signup-form_row-item">
+                        <div class="signup-form_input signup_user-email">
+                            <img src="./imgs/icons/u_envelope.svg" alt="" />
+                            <div class="input-container">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-input check-input" type="email" name="email" id="email" value=""
+                                    novalidate />
+                            </div>
+                        </div>
+                        <span class="input-error email-error"></span>
+                    </div>
+                    <div class="signup_user-agriment">
+                        <input type="checkbox" id="agriment" class="custom-checkbox" />
+                        <label for="agriment" class="signup_user-agriment-custom">
+                            <span class="agriment-check"><img src="./imgs/icons/Vector.svg" class="agriment-sp1"
+                                    alt="icon" /></span>
+                            I agree to the
+                            <div class="link_und"><a href="#"> Terms & Conditions</a></div>
+                            .*
+                        </label>
+                    </div>
+                </div>
+                <div class="signup-form_row">
+                    <input type="submit" class="signup-btn" value="Sign Up">
+                </div>
+            </form>
+            <div class="login-link">
+                If you have an account, <a href="#">Log In</a>
+            </div>
+        </section>
+        <div class="foot-bg-img"><img src="./imgs/mob-foot.svg" alt="icon"></div>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+</html>
